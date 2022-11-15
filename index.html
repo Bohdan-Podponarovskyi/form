@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <form action="" method="post" autocomplete="on">
+        <h2>Registration form</h2>
+        <fieldset>
+            <legend>Credential</legend>
+            <label>Email: <input type="email" id="email" name="email" placeholder="example@gmail.com" required></label>
+            <label>Password: <input type="password" id="password" name="password" placeholder="Enter your password" required></label>
+            <label>Confirm Password: <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Personal data</legend>
+            <label>First Name: <input type="text" id="first_name" name="first_name" placeholder="Enter your First name" required></label>
+            <label>Last name: <input type="text" id="last_name" name="last_name" placeholder="Enter your Last name" required></label>
+            <label>Age: <input type="number" id="age" name="age" placeholder="Enter your age" required></label>
+            <div>
+                <span>Sex:</span>
+                <label>Male <input type="radio" id="male" name="sex" required></label>
+                <label>Female <input type="radio" id="female" name="sex" required></label>
+            </div>
+            <label>Address: <textarea id="address" name="address" cols="60" rows="5" placeholder="Enter your address" required></textarea></label>
+        </fieldset>
+        <fieldset>
+            <legend>Education and English level</legend>
+            <label><input type="checkbox" id="ed_level_0" name="education[]"> Early childhood</label><br>
+            <label><input type="checkbox" id="ed_level_1" name="education[]"> Primary</label><br>
+            <label><input type="checkbox" id="ed_level_2" name="education[]"> Lower Secondary</label><br>
+            <label><input type="checkbox" id="ed_level_3" name="education[]"> Upper Secondary</label><br>
+            <label><input type="checkbox" id="ed_level_4" name="education[]"> Short-cycle tertiary</label><br>
+            <label><input type="checkbox" id="ed_level_5" name="education[]"> Bachelors degree or equivalent tertiary</label><br>
+            <label><input type="checkbox" id="ed_level_6" name="education[]"> Masters degree or equivalent tertiary</label><br>
+            <label><input type="checkbox" id="ed_level_7" name="education[]"> Doctoral degree or equivalent tertiary</label><br>
+            <br>
+            <label for="eng_level">Your English level:</label>
+            <select name="eng_level" id="eng_level">
+                <option value="a1">(choose your level)</option>
+                <option value="a1">A1 (Beginner)</option>
+                <option value="a2">A2 (Elementary English)</option>
+                <option value="b1">B1 (Intermediate English)</option>
+                <option value="b2">B2 (Upper-Intermediate English)</option>
+                <option value="c1">C1 (Advanced English)</option>
+                <option value="c2">C2 (Proficiency English)</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>I agree: </legend>
+            <label><input type="checkbox" id="terms_agree" name="terms_agree" required> To <a href="#"> the Terms and Conditions</a>.</label><br>
+            <label><input type="checkbox" id="pd_agree" name="pd_agree" required> To the processing of personal data.</label><br>
+            <label><input type="checkbox" id="pd_agree" name="pd_agree"> To receive newsletters to my email.</label>
+        </fieldset>
+        <button type="reset">Reset form</button>
+        <button type="submit">Sent form</button>
+    </form>
+</body>
+</html>
